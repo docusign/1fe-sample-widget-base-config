@@ -5,9 +5,9 @@ __metadata:
   version: 8
   cacheKey: 10c0
 
-"@1fe/cli@github:docusign/1fe#head=separate-configs&workspace=@1fe/cli":
+"@1fe/cli@github:docusign/1fe#head=main&workspace=@1fe/cli":
   version: 0.0.1
-  resolution: "@1fe/cli@https://github.com/docusign/1fe.git#workspace=%401fe%2Fcli&commit=ea3e1ad3c0c4e2ab24be475a0b38d661fac6b8c9"
+  resolution: "@1fe/cli@https://github.com/docusign/1fe.git#workspace=%401fe%2Fcli&commit=ed9448335b783aa65dad0558b24ac47c750344b7"
   dependencies:
     "@babel/core": "npm:^7.26.10"
     "@babel/preset-env": "npm:^7.23.3"
@@ -89,7 +89,7 @@ __metadata:
     zod-validation-error: "npm:^3.3.0"
   bin:
     1fe-cli: ./dist/index.js
-  checksum: 10c0/2f2e1c232e46523d1b5197090a49368e87c56618e59b735dd8465d1b7122e0995c8eabec3cf699b576ebc6cceb1bc12028f3588b73a98604bedfd45fd5354ce4
+  checksum: 10c0/0f9e9d8d6984f0aedb10fdc84f8041670b59bbbd3e14d13b1bd4f9dbbf5cda7b8aeae0586b329552030b08b2ec82240edb77a0ad3234eee4717a829d0725b008
   languageName: node
   linkType: hard
 
@@ -3000,7 +3000,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@repo/widget-base-config@workspace:."
   dependencies:
-    "@1fe/cli": "github:docusign/1fe#head=separate-configs&workspace=@1fe/cli"
+    "@1fe/cli": "github:docusign/1fe#head=main&workspace=@1fe/cli"
     ky: "npm:^1.7.5"
     typescript: "npm:5.8.2"
   languageName: unknown

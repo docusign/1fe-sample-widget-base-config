@@ -8,7 +8,7 @@
     "prepack": "yarn build"
   },
   "dependencies": {
-    "@1fe/cli": "github:docusign/1fe#head=separate-configs&workspace=@1fe/cli",
+    "@1fe/cli": "github:docusign/1fe#head=main&workspace=@1fe/cli",
     "ky": "^1.7.5",
     "typescript": "5.8.2"
   },
