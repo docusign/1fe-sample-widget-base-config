@@ -1,4 +1,4 @@
-import { OneFeCommonConfig, OneFeBaseConfigurationObject } from '@1fe/cli';
+import { OneFeDynamicConfig, OneFeBaseConfigurationObject, OneFeEnvironmentObject } from '@1fe/cli';
 
 import ky from 'ky';
 
@@ -21,11 +21,11 @@ const libraryVersionsUrl: Record<Environments, string> = {
 };
 
 function getDynamicConfig(env: Environments) {
-  return ky.get(dynamicConfigUrls[env]).json<OneFeCommonConfig>();
+  return ky.get(dynamicConfigUrls[env]).json<OneFeDynamicConfig>();
 }
 
 function getLibraryVersions(env: Environments) {
-  return ky.get(libraryVersionsUrl[env]).json<OneFeCommonConfig>();
+  return ky.get(libraryVersionsUrl[env]).json<OneFeEnvironmentObject['libraryVersions']>();
 }
 
 export async function getBaseConfig(): Promise<OneFeBaseConfigurationObject> {
