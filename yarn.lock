@@ -7,7 +7,7 @@ __metadata:
 
 "@1fe/cli@github:docusign/1fe#head=main&workspace=@1fe/cli":
   version: 0.0.1
-  resolution: "@1fe/cli@https://github.com/docusign/1fe.git#workspace=%401fe%2Fcli&commit=ed9448335b783aa65dad0558b24ac47c750344b7"
+  resolution: "@1fe/cli@https://github.com/docusign/1fe.git#workspace=%401fe%2Fcli&commit=48b0489cec75439924e59c90d3c65f78508ab265"
   dependencies:
     "@babel/core": "npm:^7.26.10"
     "@babel/preset-env": "npm:^7.23.3"
@@ -89,7 +89,7 @@ __metadata:
     zod-validation-error: "npm:^3.3.0"
   bin:
     1fe-cli: ./dist/index.js
-  checksum: 10c0/0f9e9d8d6984f0aedb10fdc84f8041670b59bbbd3e14d13b1bd4f9dbbf5cda7b8aeae0586b329552030b08b2ec82240edb77a0ad3234eee4717a829d0725b008
+  checksum: 10c0/244f875dd1a9646a40c474620811c4084469ff44f24d90598b2a7315f0e2c7294665f3bce61ec22db9cac85f0fb9c2ab77fc73f7ccc73fba4150c43439042997
   languageName: node
   linkType: hard
 
