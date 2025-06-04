@@ -29,17 +29,31 @@ function getLibraryVersions(env: Environments) {
 }
 
 export async function getBaseConfig(): Promise<OneFeBaseConfigurationObject> {
+  const isCI = process.env.CI === 'true';
+
+  const bathtubUrl = isCI
+    ? 'https://demo.1fe.com/bathtub'
+    : 'http://localhost:3001/bathtub';
+
+  const shellBaseUrl = isCI
+    ? 'https://demo.1fe.com'
+    : 'http://localhost:3001';
+
+  const serverBaseUrl = isCI
+    ? 'https://demo.1fe.com'
+    : 'http://localhost:3001';
+
   const baseConfig: OneFeBaseConfigurationObject = {
     environments: {},
-    bathtubUrl: 'http://localhost:3001/bathtub',
+    bathtubUrl,
   };
 
   for (const env of environments) {
     baseConfig.environments[env] = {
       dynamicConfig: await getDynamicConfig(env),
       libraryVersions: await getLibraryVersions(env),
-      shellBaseUrl: 'http://localhost:3001',
-      serverBaseUrl: 'http://localhost:3001',
+      shellBaseUrl,
+      serverBaseUrl,
     };
   }
 
