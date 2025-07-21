@@ -1,5 +1,5 @@
 {
-  "name": "@repo/widget-base-config",
+  "name": "@1fe/sample-widget-base-config",
   "version": "0.0.1",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
