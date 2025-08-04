@@ -66,7 +66,7 @@ jobs:
       - name: Authenticate to npm
         shell: bash
         run: |
-          echo "//registry.npmjs.org/:_authToken=${{ secrets.NPM_TOKEN_READONLY_1FE }}" > ${{ env.NPM_CONFIG_USERCONFIG }}
+          echo "//registry.npmjs.org/:_authToken=${{ secrets.NPM_TOKEN }}" > ${{ env.NPM_CONFIG_USERCONFIG }}
         env:
           NPM_CONFIG_USERCONFIG: ${{ github.workspace }}/.npmrc
 
