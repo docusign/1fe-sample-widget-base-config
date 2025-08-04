@@ -61,7 +61,7 @@ jobs:
           cache: 'yarn'
           registry-url: 'https://registry.npmjs.org'
         env:
-          NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
+          NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN_READONLY_1FE }}
 
       - name: Authenticate to npm
         shell: bash
