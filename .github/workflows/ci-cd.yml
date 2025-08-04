@@ -34,11 +34,8 @@ jobs:
         shell: bash
         run: |
           echo "//registry.npmjs.org/:_authToken=${{ secrets.NPM_TOKEN_READONLY_1FE }}" > ${{ env.NPM_CONFIG_USERCONFIG }}
-          yarn config set npmRegistryServer https://registry.npmjs.org
-          yarn config set npmAuthToken ${{ secrets.NPM_TOKEN_READONLY_1FE }}
         env:
           NPM_CONFIG_USERCONFIG: ${{ github.workspace }}/.npmrc
-
 
       - name: Install dependencies
         run: yarn install --no-immutable
@@ -70,11 +67,8 @@ jobs:
         shell: bash
         run: |
           echo "//registry.npmjs.org/:_authToken=${{ secrets.NPM_TOKEN_READONLY_1FE }}" > ${{ env.NPM_CONFIG_USERCONFIG }}
-          yarn config set npmRegistryServer https://registry.npmjs.org
-          yarn config set npmAuthToken ${{ secrets.NPM_TOKEN_READONLY_1FE }}
         env:
           NPM_CONFIG_USERCONFIG: ${{ github.workspace }}/.npmrc
-
 
       - name: Install dependencies
         run: yarn install --no-immutable
@@ -85,7 +79,9 @@ jobs:
       - name: Publish to npm
         uses: changesets/action@v1
         with:
+          version: yarn changeset version
           publish: yarn changeset publish
+          createGithubReleases: true
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
