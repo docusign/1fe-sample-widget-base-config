@@ -105,8 +105,8 @@ yarn build --clean
 ## Getting Help
 
 - **[1fe Documentation](https://1fe.com/getting-started/installation/)** - Complete platform documentation
-- **[GitHub Issues](https://github.com/docusign/1fe-sample-widget-base-config/issues)** - Report bugs or request features
-- **[GitHub Discussions](https://github.com/docusign/1fe-sample-widget-base-config/discussions)** - Ask questions and share ideas
+- **[GitHub Issues](https://github.com/docusign/1fe/issues)** - Report bugs or request features
+- **[GitHub Discussions](https://github.com/docusign/1fe/discussions)** - Ask questions and share ideas
 
 ## License
 
