@@ -1,5 +1,17 @@
 # @1fe/sample-widget-base-config
 
+## 0.1.2
+
+### Patch Changes
+
+- Second patch release for additional workflow testing (corrected version)
+
+## 0.1.1
+
+### Patch Changes
+
+- Second patch release for additional workflow testing (clean branch)
+
 ## 0.1.1
 
 ### Patch Changes
