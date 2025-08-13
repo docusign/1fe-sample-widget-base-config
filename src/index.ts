@@ -31,9 +31,9 @@ function getLibraryVersions(env: Environments) {
 export async function getBaseConfig(): Promise<OneFeBaseConfigurationObject> {
   const isCI = process.env.CI === 'true';
 
-  const bathtubUrl = isCI
-    ? 'https://demo.1fe.com/bathtub'
-    : 'http://localhost:3001/bathtub';
+  const playgroundUrl = isCI
+    ? 'https://demo.1fe.com/playground'
+    : 'http://localhost:3001/playground';
 
   const shellBaseUrl = isCI
     ? 'https://demo.1fe.com'
@@ -45,7 +45,7 @@ export async function getBaseConfig(): Promise<OneFeBaseConfigurationObject> {
 
   const baseConfig: OneFeBaseConfigurationObject = {
     environments: {},
-    bathtubUrl,
+    playgroundUrl,
   };
 
   for (const env of environments) {

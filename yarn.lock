@@ -5,9 +5,9 @@ __metadata:
   version: 8
   cacheKey: 10c0
 
-"@1fe/cli@npm:0.0.1":
-  version: 0.0.1
-  resolution: "@1fe/cli@npm:0.0.1"
+"@1fe/cli@npm:^0.1.1":
+  version: 0.1.1
+  resolution: "@1fe/cli@npm:0.1.1"
   dependencies:
     "@babel/core": "npm:^7.27.4"
     "@babel/preset-env": "npm:^7.27.2"
@@ -89,7 +89,7 @@ __metadata:
     zod-validation-error: "npm:^3.4.1"
   bin:
     1fe-cli: dist/index.js
-  checksum: 10c0/c18d3d6a3e7874ea0046055fc8977a911a54b1f8400b8f5a6a242004e92a3122bc3c9bf1b83df9463b4d8404cfa62c372279088c80f7ba54d3ed3b085241e752
+  checksum: 10c0/83a6decdac41423ccd9e82b1dcdede09799f3ea16e37004d2bc76ebba84edbf6c6672e1e94eafed3caf7fbb695a5d16b11ed326b8619f547cd6d5f2059660fab
   languageName: node
   linkType: hard
 
@@ -97,7 +97,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@1fe/sample-widget-base-config@workspace:."
   dependencies:
-    "@1fe/cli": "npm:0.0.1"
+    "@1fe/cli": "npm:^0.1.1"
     "@changesets/cli": "npm:^2.29.4"
     ky: "npm:^1.7.5"
     typescript: "npm:5.8.2"
