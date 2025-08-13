@@ -98,7 +98,7 @@ __metadata:
   resolution: "@1fe/sample-widget-base-config@workspace:."
   dependencies:
     "@1fe/cli": "npm:^0.1.1"
-    "@changesets/cli": "npm:^2.29.4"
+    "@changesets/cli": "npm:^2.29.5"
     ky: "npm:^1.7.5"
     typescript: "npm:5.8.2"
   languageName: unknown
@@ -1812,7 +1812,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@changesets/cli@npm:^2.29.4":
+"@changesets/cli@npm:^2.29.5":
   version: 2.29.5
   resolution: "@changesets/cli@npm:2.29.5"
   dependencies:
