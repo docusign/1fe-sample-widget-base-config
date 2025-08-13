@@ -1,5 +1,11 @@
 # @1fe/sample-widget-base-config
 
+## 0.1.2
+
+### Patch Changes
+
+- 56fc172: Moving to playground instead of bathtub
+
 ## 0.1.1
 
 ### Patch Changes
