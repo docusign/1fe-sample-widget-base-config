@@ -1,5 +1,11 @@
 # @1fe/sample-widget-base-config
 
+## 0.1.3
+
+### Patch Changes
+
+- d01e3a3: - Patch: Minor bug fixes and improvements.
+
 ## 0.1.2
 
 ### Patch Changes
