@@ -30,13 +30,6 @@ jobs:
         env:
           NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN_READONLY_1FE }}
 
-      - name: Authenticate to npm
-        shell: bash
-        run: |
-          echo "//registry.npmjs.org/:_authToken=${{ secrets.NPM_TOKEN_READONLY_1FE }}" > ${{ env.NPM_CONFIG_USERCONFIG }}
-        env:
-          NPM_CONFIG_USERCONFIG: ${{ github.workspace }}/.npmrc
-
       - name: Install dependencies
         run: yarn install --no-immutable
 
@@ -63,12 +56,8 @@ jobs:
         env:
           NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN_READONLY_1FE }}
 
-      - name: Authenticate to npm
-        shell: bash
-        run: |
-          echo "//registry.npmjs.org/:_authToken=${{ secrets.NPM_TOKEN }}" > ${{ env.NPM_CONFIG_USERCONFIG }}
-        env:
-          NPM_CONFIG_USERCONFIG: ${{ github.workspace }}/.npmrc
+      - name: Ensure OIDC trusted publishing has latest npm
+        run: npm install -g npm@latest
 
       - name: Install dependencies
         run: yarn install --no-immutable
@@ -83,4 +72,3 @@ jobs:
           createGithubReleases: true
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
