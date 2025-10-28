@@ -6,7 +6,7 @@
     "url": "https://github.com/docusign/1fe-sample-widget-base-config.git"
   },
   "publishConfig": {
-    "access": "restricted",
+    "access": "public",
     "registry": "https://registry.npmjs.org/"
   },
   "main": "dist/index.js",
